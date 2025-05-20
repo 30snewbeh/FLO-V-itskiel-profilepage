@@ -335,6 +335,39 @@ body::after {
   transform: scale(1.03);
 }
 
+/* === Follow Me Section Below Profile Image === */
+.follow-me-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.follow-me-section h2 {
+  color: #6C9CDE;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #333;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  background-color: rgba(108, 156, 222, 0.1); /* Soft biru pastel */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2) rotate(2deg);
+  color: #6C9CDE;
+}
+
 /* === Guide Lines (Sementara) - Harus Muncul di Atas Semua === */
 .guide-lines {
   position: fixed;
