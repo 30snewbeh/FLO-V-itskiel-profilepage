@@ -15,9 +15,9 @@ function createBubble() {
   bubble.classList.add('bubble');
 
   const size = Math.random() * 10 + 10; // Ukuran antara 10px - 20px
-  const left = Math.random() * 100; // Posisi horizontal acak
+  const left = Math.random() * 100; // Posisi horizontal acak (0 - 100%)
   const duration = Math.random() * 6 + 6; // Durasi animasi (6 - 12 detik)
-  const delay = Math.random() * 5; // Delay acak
+  const delay = Math.random() * 5; // Delay acak (0 - 5 detik)
 
   const randomColor = bubbleColors[Math.floor(Math.random() * bubbleColors.length)];
   const gradient = `radial-gradient(circle at center, rgba(${randomColor.start}, 0.7), rgba(${randomColor.end}, 0.2))`;
