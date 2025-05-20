@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiel Skuy Profile Page</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Montserrat Bold from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat :wght@700&display=swap" rel="stylesheet">
+
+  <!-- Custom Font for H1 -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap " rel="stylesheet">
+
+  <!-- Font Awesome CDN - Integrity Fixed -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css "
+    integrity="sha512-dCnjE6QIc+NtP3KulwAVo1nAYp4NrAI6C11CzY0gHcSyTIdcIIhntUVC+ik9JAeUIXklcd5F4JXLVoYldcDU="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Bubbles Container -->
+  <div class="bubbles" id="bubbles"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#" class="active">
+        <span class="nav-icon">
+          <i class="fas fa-user"></i>
+        </span>
+        Profile
+      </a>
+
+      <a href="#">
+        <span class="nav-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </span>
+        Stream Schedule
+      </a>
+
+      <a href="#">
+        <span class="nav-icon">
+          <i class="fas fa-photo-video"></i>
+        </span>
+        Gallery
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Guide Lines -->
+    <div class="guide-lines">
+      <div class="horizontal-line"></div>
+      <div class="vertical-line"></div>
+    </div>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <div class="profile-container">
+        <!-- Left: Profile Image -->
+        <div class="profile-image">
+          <img src="assets/images/Kiel.png" alt="Kiel Skuy Profile Image" />
+        </div>
+
+        <!-- Right: Profile Info -->
+        <div class="profile-info">
+          <h1>KIEL SKUY</h1>
+
+          <!-- List Item dengan span.label dan span.value terpisah -->
+          <ul class="profile-details">
+            <li>
+              <span class="label">Birthday</span>
+              <span class="value">34 Juli 1881</span>
+            </li>
+            <li>
+              <span class="label">Height</span>
+              <span class="value">170 cm</span>
+            </li>
+            <li>
+              <span class="label">Debut</span>
+              <span class="value">07 Mei 2025</span>
+            </li>
+            <li>
+              <span class="label">Hobby</span>
+              <span class="value">Gaming, Music, Yapping</span>
+            </li>
+          </ul>
+
+          <!-- About Me Section -->
+          <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi... My Name is Kiel!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p> 
+            <p>Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
+            <p>In id cursus mi pretium tellus dui congue.</p>
+          </div>
+
+          <!-- Trailer Section -->
+          <div class="trailer-section">
+            <h2>Trailer</h2>
+            <div class="trailer">
+              <div class="video-frame">
+                <iframe 
+                  width="320" 
+                  height="180" 
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ "
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
