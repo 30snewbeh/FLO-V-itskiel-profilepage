@@ -189,7 +189,7 @@ body::after {
 .profile-image {
   position: absolute;
   left: 710px;
-  top: 160px;
+  top: 100px;
   width: 236px;
   height: 534px;
   transition: transform 0.4s ease;
@@ -215,7 +215,7 @@ body::after {
 .profile-info h1 {
   position: absolute;
   left: 980px;
-  top: 166px;
+  top: 100px;
   font-size: 32px;
   width: 280px;
   height: 32px;
@@ -231,7 +231,7 @@ body::after {
   margin: 0;
   position: absolute;
   left: 980px;
-  top: 221px;
+  top: 150px;
   line-height: 1.4;
 }
 
@@ -265,7 +265,7 @@ body::after {
 .about-me {
   position: absolute;
   left: 980px;
-  top: 404px;
+  top: 320px;
   width: 387px;
 }
 
@@ -295,7 +295,7 @@ body::after {
 .trailer-section {
   position: absolute;
   right: 600px;
-  top: 650px;
+  top: 570px;
   text-align: center;
 }
 
@@ -337,8 +337,11 @@ body::after {
 
 /* === Follow Me Section Below Profile Image === */
 .follow-me-section {
+  position: absolute;
+  left: 722px;
+  top: 730px;
   text-align: center;
-  margin-top: 60px;
+  z-index: 2;
 }
 
 .follow-me-section h2 {
@@ -368,35 +371,54 @@ body::after {
   color: #6C9CDE;
 }
 
-/* === Guide Lines (Sementara) - Harus Muncul di Atas Semua === */
-.guide-lines {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-.horizontal-line,
-.vertical-line {
-  content: '';
+/* === Donate Section Below Follow Me === */
+.donate-section {
   position: absolute;
-  background-color: red;
-  opacity: 0.7;
+  left: 750px; /* Sesuaikan sesuai kebutuhan */
+  bottom: -80px;  /* Sesuaikan sesuai kebutuhan */
+  text-align: center;
+  z-index: 2;
 }
 
-.horizontal-line {
+.donate-section h2 {
+  color: #6C9CDE;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.donate-button {
+  width: 140px;
+  height: 40px;
+  background-color: #FAAE2B;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.donate-button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
   width: 100%;
-  height: 1px;
-  top: 50%;
-  transform: translateY(-0.5px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
 
-.vertical-line {
-  width: 1px;
-  height: 100%;
-  left: 50%;
-  transform: translateX(-0.5px);
+/* Hover Effect untuk tombol donate */
+.donate-button:hover {
+  background-color: #ffeb3b; /* Kuning lebih terang saat hover */
+  transform: scale(1.05);
+}
+
+.donate-button a:hover {
+  color: #000;
+  transform: scale(1.05);
 }
